@@ -18,4 +18,11 @@ module.exports = {
       max: 1,
     },
   },
+  // 单独设置eslint,api 文件，不校验驼峰格式
+  overrides: [
+    {
+      files: ['src/api/**/*.ts'],
+      rules: { camelcase: 'off' },
+    },
+  ],
 }

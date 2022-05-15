@@ -3,28 +3,17 @@ import { ref } from 'vue'
 import user from '@/api/user'
 
 defineProps<{ msg: string }>()
-
 const count = ref(0)
 </script>
 
 <template>
-  <h1>首页</h1>
+  <h1 onclick="onclick">首页</h1>
+
+  <img src="@/assets/logo.png" alt="" />
 </template>
 
-<style scoped>
-a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
+<style scoped lang="scss">
+h1 {
+  color: $color;
 }
 </style>
