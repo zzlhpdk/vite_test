@@ -6,10 +6,9 @@ import axios, {
 } from 'axios'
 // const request: AxiosInstance = axios.create({
 const request = axios.create({
-  baseURL: import.meta.env.BASE_URL,
+  // baseURL: import.meta.env.BASE_URL,
   timeout: 60000, // 请求超时时间
 })
-
 // 请求拦截器
 request.interceptors.request.use(
   // function (config: AxiosRequestConfig) {
